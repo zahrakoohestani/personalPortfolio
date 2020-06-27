@@ -5,10 +5,11 @@
 
 html {
     height: 100%;
-    font-size: 62.5%
+    font-size: 65.5%
 }
 
 body {
+    font-family: monospace;
     height: 100%;
     background-color: #10578D;
     text-align: center;

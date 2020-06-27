@@ -1,4 +1,4 @@
-{% load static %} {% for i in project %} {% for j in about_me %}
+{% load static %} {% for i in project %} {% for j in about_me_data %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -20,8 +20,8 @@
                                 <div class="title-bottom-left">
                                     <div class="title-top-right">
                                         <div class="title-bottom-right">
-                                            <h1><a href="http://www.zahrakoohestani.ir/"><span>{{ i.name }}</span></a></h1>
-                                            <p>{{ i.description }}&hellip;</p>
+                                            <h1 style="font-family: monospace;"><a href="http://www.zahrakoohestani.ir/"><span>{{ i.name }}</span></a></h1>
+                                            <p style="font-family: monospace;">{{ i.description }}&hellip;</p>
                                         </div>
                                     </div>
                                 </div>
@@ -34,12 +34,14 @@
         <hr class="noscreen" />
         <div class="content">
             <div class="column-left">
-                <h3>MENU</h3>
+                <h3 style="font-family: monospace;">MENU</h3>
                 <a href="#skip-menu" class="hidden">Skip menu</a>
                 <ul class="menu">
-                    <li><a href="http://www.zahrakoohestani.ir/" class="active">Home</a></li>
-                    <li><a href="http://www.internplusplus.ir">Our Podcast</a></li>
-                    <li class="last"><a href="http://all-free-download.com/free-website-templates/">Media Platforms</a></li>
+                    <li style="font-family: monospace;"><a href="http://zahrakoohestani.ir/" class="active">Home</a></li>
+                    <li style="font-family: monospace;"><a href="http://internplusplus.ir/">Our Podcast</a></li>
+                    <li style="font-family: monospace;"><a href="https://github.com/zahrakoohestani">GitHub</a></li>
+                    <li style="font-family: monospace;"><a href="https://telegram.me/zahra_koohestani">Telegram</a></li>
+                    <li style="font-family: monospace;"><a href="https://www.instagram.com/zahra_koohestani/">Instagram</a></li>
                 </ul>
             </div>
             <div id="skip-menu"></div>
@@ -47,17 +49,17 @@
                 <div class="box">
                     <div class="box-top"></div>
                     <div class="box-in">
-                        <h2>{{ j.first_title }}</h2>
-                        <p>{{ j.first_caption }}</p>
-                        <p>{{ j.second_caption }}</p>
+                        <h2 style="font-family: monospace;font-size: 0.5cm;">{{ j.first_title }}</h2>
+                        <p style="padding-right:1cm ; font-family: monospace;font-size: 0.4cm;">{{ j.first_caption }}</p>
+                        <p style="padding-right:1cm; font-family: monospace; font-size: 0.4cm;">{{ j.second_caption }}</p>
                         <br/>
-                        <h2>{{ j.second_title }}</h2>
+                        <h2 style="font-family: monospace;font-size: 0.5cm;">{{ j.second_title }}</h2>
                         <ul class="main-list">
-                            <li>{{ j.li_1 }}</li>
-                            <li>{{ j.li_2 }}</li>
-                            <li>{{ j.li_3 }}</li>
-                            <li>{{ j.li_4 }}</li>
-                            <li>{{ j.li_5 }}</li>
+                            <li style="font-family: monospace;font-size: 0.4cm;">{{ j.li_1 }}</li>
+                            <li style="font-family: monospace;font-size: 0.4cm;">{{ j.li_2 }}</li>
+                            <li style="font-family: monospace;font-size: 0.4cm;">{{ j.li_3 }}</li>
+                            <li style="font-family: monospace;font-size: 0.4cm;">{{ j.li_4 }}</li>
+                            <li style="font-family: monospace;font-size: 0.4cm;">{{ j.li_5 }}</li>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +67,6 @@
             <div class="cleaner">&nbsp;</div>
         </div>
     </div>
-    <div align=center>This template downloaded from <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div>
 </body>
 
 </html>

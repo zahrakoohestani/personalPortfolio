@@ -9,11 +9,11 @@ class about_me(models.Model):
     first_caption = models.CharField(max_length=10000)
     second_caption = models.CharField(max_length=10000)
     second_title = models.CharField(max_length=100)
-    li_1 = models.CharField(max_length=100)
-    li_2 = models.CharField(max_length=100)
-    li_3 = models.CharField(max_length=100)
-    li_4 = models.CharField(max_length=100)
-    li_5 = models.CharField(max_length=100)
+    li_1 = models.CharField(max_length=100,default="")
+    li_2 = models.CharField(max_length=100,default="")
+    li_3 = models.CharField(max_length=100,default="")
+    li_4 = models.CharField(max_length=100,default="")
+    li_5 = models.CharField(max_length=100,default="")
 
 
     
