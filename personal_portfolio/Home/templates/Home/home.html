@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} {% for i in project %} {% for j in about_me %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -20,8 +20,8 @@
                                 <div class="title-bottom-left">
                                     <div class="title-top-right">
                                         <div class="title-bottom-right">
-                                            <h1><a href="http://all-free-download.com/free-website-templates/">MY <span>PERSONAL</span> WEBSITE</a></h1>
-                                            <p>Lorem ipsum dolor sit amet&hellip;</p>
+                                            <h1><a href="http://www.zahrakoohestani.ir/"><span>{{ i.name }}</span></a></h1>
+                                            <p>{{ i.description }}&hellip;</p>
                                         </div>
                                     </div>
                                 </div>
@@ -37,10 +37,9 @@
                 <h3>MENU</h3>
                 <a href="#skip-menu" class="hidden">Skip menu</a>
                 <ul class="menu">
-                    <li><a href="http://all-free-download.com/free-website-templates/" class="active">Home</a></li>
-                    <li><a href="http://all-free-download.com/free-website-templates/">About me</a></li>
-                    <li><a href="http://all-free-download.com/free-website-templates/">Portfolio</a></li>
-                    <li class="last"><a href="http://all-free-download.com/free-website-templates/">Contact</a></li>
+                    <li><a href="http://www.zahrakoohestani.ir/" class="active">Home</a></li>
+                    <li><a href="http://www.internplusplus.ir">Our Podcast</a></li>
+                    <li class="last"><a href="http://all-free-download.com/free-website-templates/">Media Platforms</a></li>
                 </ul>
             </div>
             <div id="skip-menu"></div>
@@ -48,19 +47,17 @@
                 <div class="box">
                     <div class="box-top"></div>
                     <div class="box-in">
-                        <h2>Welcome to my website</h2>
-                        <p>Integer metus enim, laoreet vitae, blandit sit amet, gravida eu, eros. Morbi quis enim. Sed velit. Proin a sapien a lacus semper auctor. Maecenas faucibus aliquam diam. Duis aliquet. Donec feugiat tincidunt orci. Aliquam suscipit.
-                            Cras vehicula sodales erat. Duis non felis.</p>
-                        <p>Sed pharetra felis quis quam. Morbi aliquet consectetuer ligula. Curabitur velit elit, pellentesque tincidunt, ultrices ut, ullamcorper eget, ante. Curabitur ipsum orci, cursus eget, ultricies et, fringilla in, felis. Aliquam porta
-                            augue ac arcu. Aliquam mi. Fusce cursus lorem sed mi.</p>
-                        <br />
-                        <h2>Lorem ipsum dolor</h2>
+                        <h2>{{ j.first_title }}</h2>
+                        <p>{{ j.first_caption }}</p>
+                        <p>{{ j.second_caption }}</p>
+                        <br/>
+                        <h2>{{ j.second_title }}</h2>
                         <ul class="main-list">
-                            <li>Mauris viverra, <strong>tellus sed euismod</strong> auctor</li>
-                            <li>Cras <strong>condimentum</strong>, sapien et ultrices</li>
-                            <li>Pellentesque habitant <strong>morbi tristique</strong> senectus</li>
-                            <li>Nam rutrum, <strong>turpis sed ornare</strong></li>
-                            <li>Praesent <strong>feugiat</strong>, libero eget tincidunt</li>
+                            <li>{{ j.li_1 }}</li>
+                            <li>{{ j.li_2 }}</li>
+                            <li>{{ j.li_3 }}</li>
+                            <li>{{ j.li_4 }}</li>
+                            <li>{{ j.li_5 }}</li>
                         </ul>
                     </div>
                 </div>
@@ -72,3 +69,4 @@
 </body>
 
 </html>
+{% endfor %}{% endfor %}

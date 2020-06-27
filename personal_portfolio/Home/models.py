@@ -1,6 +1,19 @@
 from django.db import models
 
-class Data(models.Model):
-    text = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='home/images', default="")
-    long_text = models.TextField(default="")
+class home_page(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.CharField(max_length=200)
+
+class about_me(models.Model):
+    first_title = models.CharField(max_length=100)
+    first_caption = models.CharField(max_length=10000)
+    second_caption = models.CharField(max_length=10000)
+    second_title = models.CharField(max_length=100)
+    li_1 = models.CharField(max_length=100)
+    li_2 = models.CharField(max_length=100)
+    li_3 = models.CharField(max_length=100)
+    li_4 = models.CharField(max_length=100)
+    li_5 = models.CharField(max_length=100)
+
+
+    
